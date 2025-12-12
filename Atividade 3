@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Atividade2 {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        String resposta;
+        double celsius = 0.0;
+        double fahrenheit = 0.0;
+        double kelvin = 0.0;
+
+        do {
+            System.out.print("\nInforme a Temperatura em graus Celsius: ");
+            celsius = sc.nextDouble();
+
+            fahrenheit = (celsius * 9 / 5) + 32.0;
+            kelvin = (celsius + 273.15);
+
+            System.out.println("\n-------- RESULTADOS --------");
+            System.out.printf("Temperatura em Celsius: %.2f%n", celsius);
+            System.out.printf("Temperatura em Fahrenheit: %.2f%n", fahrenheit);
+            System.out.printf("Temperatura em Kelvin: %.2f%n", kelvin);
+
+            System.out.print("\nDeseja continuar... (S / N)? ");
+            resposta = sc.next().toUpperCase();
+
+        } while (resposta.equals("S"));
+
+        sc.close();
+    }
+}
