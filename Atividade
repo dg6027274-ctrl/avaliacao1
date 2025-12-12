@@ -1,0 +1,25 @@
+double mb1 = (notas[0] + notas[1]) / 2;
+double mb2 = (notas[2] + notas[3]) / 2;
+double mb3 = (notas[4] + notas[5]) / 2;
+double mb4 = (notas[6] + notas[7]) / 2;
+
+double ms1 = (mb1 + mb2) / 2;
+double ms2 = (mb3 + mb4) / 2;
+
+double mediaFinal = (ms1 + ms2) / 2;
+
+System.out.println("\n----------- RESULTADOS -----------");
+
+System.out.printf("Nota 1º Bimestre: %.2f\n", mb1);
+System.out.printf("Nota 2º Bimestre: %.2f\n", mb2);
+System.out.printf("Nota 1º Semestre: %.2f\n", ms1);
+
+System.out.println("\n----------------------------------");
+
+System.out.printf("Nota 3º Bimestre: %.2f\n", mb3);
+System.out.printf("Nota 4º Bimestre: %.2f\n", mb4);
+System.out.printf("Nota 2º Semestre: %.2f\n", ms2);
+
+System.out.println("\n----------------------------------");
+
+System.out.printf("Nota Média Final: %.2f\n", mediaFinal);
