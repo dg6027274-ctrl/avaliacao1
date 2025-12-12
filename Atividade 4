@@ -1,0 +1,20 @@
+double fahrenheit = 0.0;
+double kelvin = 0.0;
+
+do {
+
+    System.out.print("\nInforme a Temperatura em graus Celsius: ");
+    celsius = sc.nextDouble();
+
+    fahrenheit = (celsius * 9 / 5) + 32.0;
+    kelvin = (celsius + 273.15);
+
+    System.out.println("\n--------- RESULTADOS ---------\n");
+    System.out.printf("Temperatura em Celsius: %.2f°C\n", celsius);
+    System.out.printf("Temperatura em Fahrenheit: %.2f°F\n", fahrenheit);
+    System.out.printf("Temperatura em Kelvin: %.2fK\n", kelvin);
+
+    System.out.print("\nDeseja continuar ... (S / N)? ");
+    resposta = sc.next().toUpperCase();
+
+} while (resposta.equals("S"));
