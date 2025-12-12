@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Atividade1 {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        double[] notas = new double[8];
+
+        System.out.println("----- Informe as 8 notas do aluno -----");
+
+        for (int i = 0; i < notas.length; i++) {
+            System.out.print("Informe a " + (i + 1) + "ª nota: ");
+            notas[i] = sc.nextDouble();
+        }
+
+        double mb1 = (notas[0] + notas[1]) / 2;
+        double mb2 = (notas[2] + notas[3]) / 2;
+        double mb3 = (notas[4] + notas[5]) / 2;
+        double mb4 = (notas[6] + notas[7]) / 2;
+
+        double ms1 = (mb1 + mb2) / 2;
+        double ms2 = (mb3 + mb4) / 2;
+
+        System.out.println("\n--- Médias Bimestrais ---");
+        System.out.println("MB1: " + mb1);
+        System.out.println("MB2: " + mb2);
+        System.out.println("MB3: " + mb3);
+        System.out.println("MB4: " + mb4);
+
+        System.out.println("\n--- Médias Semestrais ---");
+        System.out.println("MS1: " + ms1);
+        System.out.println("MS2: " + ms2);
+    }
+}
